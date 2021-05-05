@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>예매 - TheSimpsonMovie</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+    <meta
+      id="description"
+      content="Happy Memories 더심슨무비는 최상의 관람 환경과 양질의 켄텐츠로 영화를 통해 고객에게 행복한 기억을 선물합니다."
+    />
+    <meta
+      id="Keywords"
+      content="더심슨무비,TheSimpsonmovie, 심슨, 심슨무비, 심슨시네마, 영화, 영화관, 극장, 티켓, 박스오피스, Movie, Theater, 예매, 현재상영작, 상영예정작, 개봉영화, 영화예매, 영화예매순위, 영화순위, 상영시간표"
+    />
+    <link href="/favicon/simpson.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <script
+      async=""
+      type="text/javascript"
+      src="https://tag-deepad.lpoint.com/cookie?mid=4&amp;cid=973545548.1617673780"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script
+      async=""
+      src="//dsp.dmcmedia.co.kr/selper/js/selperevt.js?ver=0.1.4.1"
+    ></script>
+    <script
+      src="https://connect.facebook.net/signals/config/233523444404890?v=2.9.33&amp;r=stable"
+      async=""
+    ></script>
+    <script
+      async=""
+      src="https://connect.facebook.net/en_US/fbevents.js"
+    ></script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-164790289-1"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.google-analytics.com/plugins/ua/ec.js"
+    ></script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-PJ6LCKF"
+    ></script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-K8MP435"
+    ></script>
+    <script
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <script type="text/javascript">
+      var mobileKeyWords = new Array(
+        "iPhone",
+        "iPod",
+        "BlackBerry",
+        "Android",
+        "Windows CE",
+        "LG",
+        "MOT",
+        "SAMSUNG",
+        "SonyEricsson",
+        "Windows Phone"
+      );
+
+      for (var word in mobileKeyWords) {
+        if (navigator.userAgent.match(mobileKeyWords[word]) != null) {
+          location.href = "/NLCMW/";
+
+          break;
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="/Content/css/default.css?v=202104100123" />
+    <link rel="stylesheet" href="/Content/css/owl.css?v=202104100123" />
+    <link rel="stylesheet" href="/Content/css/swiper.css?v=202104100123" />
+    <link
+      rel="stylesheet"
+      href="/Content/css/jquery.mCustomScrollbar.css?v=202104100123"
+    />
+    <link rel="stylesheet" href="/Content/css/common.css?v=202104100123" />
+    <link rel="stylesheet" href="/Content/css/content.css?v=202104100123" />
+    <link rel="stylesheet" href="/Content/css/dev.css?v=202104100123" />
+
+    <script type="text/javascript">
+      var CinemaServerDomain = "https://www.lottecinema.co.kr";
+      var EventServerDomain = "https://event.lottecinema.co.kr";
+      var CinemaServiceDomain = "";
+      var Language = "KR";
+      var lottecinemaVodDomain = "https://www.lottecinemavod.co.kr";
+      var seechuAgreeMode = ""; //롯데시네마 VOD 동의 호출 경로(main, vod)
+      //서비스플랫폼 NLCMW:모바일웹, NLCMS:모바일앱, NLCHS:웹
+      var PLATFORM_TYPE = "NLCHS";
+      var CHANNEL_TYPE = "HO";
+      const headTitle = "바로예매_index";
+    </script>
+    <script src="/Content/js/jquery-1.12.3.min.js"></script>
+    <script src="/Content/js/jquery.jplayer.min.js"></script>
+    <script src="/Content/js/jquery.lazy.min.js"></script>
+    <script src="/Content/js/jquery-ui.min.js"></script>
+    <script src="/Content/js/jquery.cookie.js"></script>
+    <script src="/Content/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/Content/js/owl.carousel-2.3.4-custom.js"></script>
+    <script src="/Content/js/plugin.js"></script>
+    <script src="/Content/js/pl_custom.js"></script>
+    <script src="/Scripts/Library/moment.js"></script>
+    <script
+      type="text/javascript"
+      src="https://members.lpoint.com/api/js/lotte.sso.api.js"
+    ></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+    <script src="/Content/js/common.js?v=202104100123"></script>
+    <script src="/Scripts/common/Cookie.js?v=202104100123"></script>
+
+    <script src="/Scripts/Library/jquery.blockUI.min.js"></script>
+    <script src="/Scripts/Library/React/remarkable.min.js"></script>
+    <script src="/Scripts/Library/React/axios.min.js"></script>
+    <script src="/Scripts/common/URLSearchParamsCustom.js"></script>
+    <script src="/Scripts/common/Util.js?v=202104100123"></script>
+    <script src="/Scripts/common/Common.js?v=202104100123"></script>
+
+    <script src="/Scripts/common/ShareSNS.js?v=202104100123"></script>
+    <script src="/Scripts/Member/Member.js"></script>
+    <script type="text/javascript">
+      var MypageCommonQuery = RequestParams(document.location.search); //페이지 파라메터
+    </script>
+
+    <!-- Google Tag Manager -->
+
+    <script src="/Scripts/common/lcga.js?v=202104100123"></script>
+    <!-- Google Tag Manager -->
+  </head>
+
+  <body style="">
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-K8MP435"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+
+    <div id="loading" class="loader loader-bouncing is-active hidden"></div>
+
+    <div id="skip_nav_section" class="skip_nav">
+      <ul>
+        <li><a href="#nav">주 메뉴 바로가기</a></li>
+        <li><a href="#contents">본문 바로가기</a></li>
+      </ul>
+    </div>
+    <div
+      id="main_top_of_top_banner"
+      class="banner_top_wrap banner_type01"
+      style="background-color: rgb(10, 14, 13)"
+    >
+      <div class="inner">
+        <img
+          src="https://caching2.lottecinema.co.kr/lotte_image/2021/MemoriesOfTomorrow/MemoriesOfTomorrow_98080.jpg"
+          alt="2021 미스터리 스릴러 내일의 기억 4월 21일 대개봉 15세이상관람가 내가 본 내일, 당신은 살인자였다 폭발적 반응! 메인예고편 GO "
+        /><button class="btn_close">닫기</button>
+      </div>
+    </div>
+    <div id="header_section" class="header">
+      <h1 class="logo">
+        <a href="/index.html">Simpson The Movie</a>
+      </h1>
+      <div class="gnb">
+        <ul class="g_menu1">
+          <!-- <li>
+            <a
+              href="https://www.facebook.com/LotteCinema.kr"
+              class="btn_facebook"
+              target="_blank"
+              title="롯데시네마 페이스북 새창열림"
+              >좋아요</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCi4KivcV3a3yhkycFsjpalQ"
+              class="btn_youtube"
+              target="_blank"
+              title="새창열림"
+              >구독하기</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/lottecinema_official/"
+              class="btn_follow"
+              target="_blank"
+              title="롯데시네마 인스타그램 새창열림"
+              >팔로우</a
+            >
+          </li> -->
+        </ul>
+        <ul class="g_menu2">
+          <li>
+            <a href="https://www.lottecinema.co.kr/NLCHS/Mypage/MemberVipzone"
+              >멤버십</a
+            >
+          </li>
+          <li>
+            <a href="https://www.lottecinema.co.kr/NLCHS/Customer">고객센터</a>
+          </li>
+          <li>
+            <a href="https://www.lottecinema.co.kr/NLCHS/Member/login"
+              >로그인</a
+            >
+          </li>
+        </ul>
+        <ul class="g_menu3">
+          <li>
+            <a
+              href="https://www.lottecinema.co.kr/NLCHS/Membership/l_point"
+              class="btn_my"
+              >회원가입</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.lottecinema.co.kr/NLCHS/Ticketing"
+              class="btn_reserve"
+              >바로 예매</a
+            >
+          </li>
+          <li>
+            <button class="btn_menu_all">전체 메뉴 레이어 열기</button>
+            <div id="allmenu"></div>
+          </li>
+        </ul>
+      </div>
+      <div id="nav">
+        <ul>
+          <li class="">
+            <a href="https://www.lottecinema.co.kr/NLCHS/Ticketing">예매</a>
+            <div style="display: none">
+              <ul style="opacity: 0">
+                <li>
+                  <a
+                    href="https://www.lottecinema.co.kr/NLCHS/Ticketing"
+                    title="예매하기"
+                    >예매하기</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lottecinema.co.kr/NLCHS/Ticketing/Schedule"
+                    title="상영시간표"
+                    >상영시간표</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lottecinema.co.kr/NLCHS/Ticketing/DiscountGuide"
+                    title="할인안내"
+                    >할인안내</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="">
+            <a href="https://www.lottecinema.co.kr/NLCHS/Movie">영화</a>
+            <div style="display: none">
+              <ul style="opacity: 0">
+                <li>
+                  <a
+                    href="https://www.lottecinema.co.kr/NLCHS/Movie/List?flag=1"
+                    title="상영작"
+                    >현재상영작|상영예정작</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lottecinema.co.kr/NLCHS/Movie/List?flag=1"
+                    title="상영작"
+                    >추천영화</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lottecinema.co.kr/NLCHS/Movie/List?flag=5"
+                    title="리뷰"
+                    >영화리뷰</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="">
+            <a href="#">영화관</a>
+            <div style="display: none">
+              <ul style="opacity: 0">
+                <li>
+                  <a href="#" title="강남">강남</a>
+                  <div style="display: none">
+                    <ul style="opacity: 0">
+                      <li>
+                        <a
+                          href="https://www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&amp;detailDivisionCode=6&amp;cinemaID=7001"
+                          >1관</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&amp;detailDivisionCode=6&amp;cinemaID=7002"
+                          >2관</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&amp;detailDivisionCode=6&amp;cinemaID=7003"
+                          >3관</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&amp;detailDivisionCode=6&amp;cinemaID=9081"
+                          >4관</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.lottecinema.co.kr/NLCHS/Cinema/Detail?divisionCode=1&amp;detailDivisionCode=6&amp;cinemaID=9081"
+                          >5관</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="">
+            <a href="https://event.lottecinema.co.kr/NLCHS/Event">공지사항</a>
+            <div style="display: none">
+              <ul style="opacity: 0">
+                <li>
+                  <a
+                    href="https://event.lottecinema.co.kr/NLCHS/Event"
+                    title="홈"
+                    >공지사항</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://event.lottecinema.co.kr/NLCHS/Event/DetailList?code=20"
+                    title="영화"
+                    >고객의소리</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://event.lottecinema.co.kr/NLCHS/Event/DetailList?code=40"
+                    title="시사회/무대인사"
+                    >1:1신고하기</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="">
+            <a href="https://www.lottecinema.co.kr/NLCHS/CinemaMall">스토어</a>
+            <div style="display: none">
+              <ul style="opacity: 0">
+                <li>
+                  <a
+                    href="https://www.lottecinema.co.kr/NLCHS/CinemaMall#store2"
+                    title="베스트"
+                    >베스트</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lottecinema.co.kr/NLCHS/CinemaMall#store3"
+                    title="관람권"
+                    >관람권</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.lottecinema.co.kr/NLCHS/CinemaMall#store4"
+                    title="스낵음료관람권"
+                    >스낵음료</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="quick_wrap" style="padding-top: 50px">
+      <div id="quick_menu" class="quick_menu" style="top: 0px">
+        <a href="/Ticketing.html">
+          <img
+            src="https://caching.lottecinema.co.kr//Media/WebAdmin/961c9cbf311b4f1299827c21a61fab76.png"
+            alt="예매하기"
+        /></a>
+        <a href="https://www.lottecinema.co.kr/NLCHS/Ticketing/Schedule">
+          <img
+            src="https://caching.lottecinema.co.kr//Media/WebAdmin/c1dbce4f91e948498c7c78239b7157ac.png"
+            alt="상영시간표"
+        /></a>
+        <a href="https://www.lottecinema.co.kr/NLCHS/Ticketing/DiscountGuide"
+          ><img
+            src="https://caching.lottecinema.co.kr//Media/WebAdmin/c793af89f3b648aa99cc679186ccfa02.png"
+            alt="할인안내"
+        /></a>
+        <a href="https://www.lottecinema.co.kr/NLCHS/MyCinema/MyClubJJagkkung"
+          ><img
+            src="https://caching.lottecinema.co.kr//Media/WebAdmin/c0945ca778f1470db48a5a90123f2e11.png"
+            alt="클럽멤버십"
+        /></a>
+        <a href="https://www.lottecinema.co.kr/NLCHS/Customer"
+          ><img
+            src="https://caching.lottecinema.co.kr//Media/WebAdmin/e339dfaae8d74acfbf7b0c6987442ac8.png"
+            alt="고객센터"
+        /></a>
+        <a href="/shoppinglist.html"
+          ><img src="/Content/images/icon/basket.png" alt="장바구니"
+        /></a>
+
+        <a href="#" class="qick_top">TOP</a>
+      </div>
+    </div>
+
+    <!--헤더 끝-->
+
+    <div id="contents" class="contents_full contents_reserve" style="">
+      <div class="wrap_reserve">
+        <h2 class="hidden">결제완료</h2>
+        <div class="section_step_tit">
+          <ul>
+            <li class="step01 prev">
+              <a href="#"
+                ><strong class="tit"><span>01</span><br />상영시간</strong>
+                <div class="bx_con">
+                  <dl>
+                    <dt>선택한 영화 제목</dt>
+                    <dd>자산어보(디지털)</dd>
+                    <dt>선택한 상영관</dt>
+                    <dd>노원8관</dd>
+                    <dt>선택한 상영 날짜</dt>
+                    <dd>2021-04-11 (일 )</dd>
+                    <dt>선택한 시간</dt>
+                    <dd>15:30 ~ 17:46</dd>
+                  </dl>
+                </div></a
+              >
+            </li>
+            <li class="step02 prev">
+              <a href="#"
+                ><strong class="tit"><span>02</span><br />인원/좌석</strong>
+                <div class="bx_con">
+                  <dl>
+                    <dt>선택한 인원</dt>
+                    <dd>성인1</dd>
+                    <dt>선택한 좌석</dt>
+                    <dd>K17</dd>
+                  </dl>
+                </div></a
+              >
+            </li>
+            <li class="step03 prev">
+              <a href="#"
+                ><strong class="tit"><span>03</span><br />결제</strong>
+                <div class="bx_con">
+                  <dl>
+                    <dt>티켓금액</dt>
+                    <dd>13,000원</dd>
+                    <dt>할인금액</dt>
+                    <dd>0원</dd>
+                    <dt>총합계</dt>
+                    <dd>13,000원</dd>
+                  </dl>
+                </div></a
+              >
+            </li>
+            <li class="step04 active">
+              <a href="#"
+                ><strong class="tit"><span>04</span><br />결제완료</strong></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="reserveStep01" class="section_step_con step01">
+          <h3 class="hidden">상영시간</h3>
+        </div>
+        <div id="reserveStep02" class="section_step_con step02">
+          <h3 class="hidden">인원/좌석</h3>
+        </div>
+        <div id="reserveStep03" class="section_step_con step03">
+          <h3 class="hidden">결제</h3>
+        </div>
+        <div id="reserveStep04" class="section_step_con step04 active">
+          <h3 class="hidden">결제완료</h3>
+          <div class="article article_payment_fin">
+            <div class="group_top"><h4 class="tit">결제완료</h4></div>
+            <div class="inner">
+              <div class="payment_fin_wrap">
+                <div class="top_notice_ic ty1">
+                  <strong
+                    >전유진 회원님, 결제가 성공적으로 완료되었습니다.</strong
+                  >
+                </div>
+                <div class="reserve_result_wrap">
+                  <div class="infor_wrap">
+                    <div class="bx_thm">
+                      <img
+                        src="https://caching.lottecinema.co.kr//Media/MovieFile/MovieImg/202102/16756_102_1.jpg"
+                        alt="자산어보"
+                      />
+                    </div>
+                    <div class="group_infor">
+                      <dl>
+                        <dt>예매번호</dt>
+                        <dd><strong class="txt_num">2541811</strong></dd>
+                      </dl>
+                      <dl>
+                        <dt>상영일시</dt>
+                        <dd>2021-04-11 (일 )<span>15:30 ~ 17:46</span></dd>
+                        <dt>상영관</dt>
+                        <dd>노원8관</dd>
+                        <dt>관람인원</dt>
+                        <dd>성인1</dd>
+                        <dt>좌석</dt>
+                        <dd>K17</dd>
+                      </dl>
+                      <button type="button" class="btn_col1 ty5">
+                        휴대폰으로 바로티켓 받기
+                      </button>
+                    </div>
+                  </div>
+                  <div class="payment_wrap new2020">
+                    <div class="group_price case1">
+                      <dl>
+                        <dt>주문금액</dt>
+                        <dd><strong>13,000</strong>원</dd>
+                      </dl>
+                    </div>
+                    <div class="group_price case2">
+                      <dl class="minus">
+                        <dt>할인금액</dt>
+                        <dd><strong>0</strong>원</dd>
+                      </dl>
+                    </div>
+                    <div class="group_price case3">
+                      <dl>
+                        <dt>총 결제 금액</dt>
+                        <dd><strong>13,000</strong>원</dd>
+                      </dl>
+                      <div class="pay_method">
+                        <dl class="sml">
+                          <dt>결제방법</dt>
+                          <dd><span class="txt_card1 ty1">신용카드</span></dd>
+                          <dt>카드번호</dt>
+                          <dd class="sml last">신한 449914******0061</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="list_txt sml">
+                  <li>
+                    <strong
+                      >온라인 예매 및 추가상품 구매 취소는 상영 시작 20분 전까지
+                      온라인에서 가능합니다.</strong
+                    >
+                  </li>
+                  <li>
+                    <strong
+                      >상영시작 20분전 이후 부터는 영화관 현장에서만 취소
+                      가능합니다.</strong
+                    >
+                  </li>
+                  <li>
+                    <strong
+                      >반드시 전체 취소만 가능하며, 예매나 추가상품중 부분
+                      취소는 불가능합니다.</strong
+                    >
+                  </li>
+                  <li>
+                    <strong
+                      >추가상품 수령 완료 시 예매 및 상품 취소 모두
+                      불가능합니다.</strong
+                    >
+                  </li>
+                  <li>
+                    <strong
+                      >포토티켓 발권 완료 시 환불은 발권된 포토티켓 모두 지참 후
+                      해당 영화관에서만 가능합니다.</strong
+                    >
+                  </li>
+                  <li>
+                    <strong
+                      >무대인사 예매 취소는 상영시작 24시간 전까지
+                      가능합니다.</strong
+                    >
+                  </li>
+                  <li>적립 예정 L.POINT는 영화 관람 다음 날 적립 됩니다.</li>
+                  <li>
+                    예고편 상영 등 사정에 의해 본 영화 시작이 10여분 정도 차이
+                    날 수 있습니다.
+                  </li>
+                  <li>
+                    개인정보 보호 정책에 따라 주민번호로 예매 티켓을 찾을 수
+                    없습니다. 꼭 예매번호를 확인해 주세요.
+                  </li>
+                  <li>
+                    스토어에서 구매한 상품은 마이페이지 &gt; 예매/구매 내역에서
+                    확인 및 사용할 수 있습니다.
+                  </li>
+                </ul>
+                <div class="btn_btm_wrap mb50 pb50">
+                  <a href="#none" class="btn_col3 ty5">결제내역</a
+                  ><a href="#none" class="btn_col2 ty5">스토어 바로가기</a
+                  ><a href="#none" class="btn_col1 ty5">홈으로 바로가기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer area-->
+
+    <footer>
+      <div id="banner_reserve_section" class="banner_reserve_wrap">
+        <div class="bx_lft">
+          <a
+            href="https://nvapi.feeldmc.com:443/ad/p/in/v1_0/clk?slotid=stw_lottelotte_37&amp;adgroupid=adg_lottecinema_20210326_87&amp;adid=adi_lottecinema_20210326_92"
+            target="_blank"
+            ><img
+              src="/Content/images/common/Inbyu.png"
+              alt="영화 보기 전에 비교 가입하고 3만원 리워드 받고 싶다면? 더심슨무비xINBYU a kakao company"
+          /></a>
+        </div>
+        <div class="bx_rgt">
+          <a
+            href="https://nvapi.feeldmc.com:443/ad/p/in/v1_0/clk?slotid=stw_lottelotte_37&amp;adgroupid=adg_lottecinema_20210326_69&amp;adid=adi_lottecinema_20210326_74"
+            target="_blank"
+            ><img
+              src="/Content/images/common/Inbyu.png"
+              alt="영화 보기 전에 비교 가입하고 3만원 리워드 받고 싶다면? 더심슨무비xINBYU a kakao company"
+          /></a>
+        </div>
+      </div>
+      <div id="banner_side_section" class="banner_side_wrap"></div>
+      <div id="banner_section" class="banner_wrap">
+        <div class="banner_01">
+          <a
+            href="https://nvapi.feeldmc.com:443/ad/p/in/v1_0/clk?slotid=stw_lottelotte_34&amp;adgroupid=adg_lottecinema_20210323_16&amp;adid=adi_lottecinema_20210331_5"
+            target=""
+            ><img
+              src="https://caching2.lottecinema.co.kr/lotte_image/2021/TheCourier/TheCourier_980180.jpg"
+              alt="더 스파이 베네딕트 컴버배치 핵전쟁 위기, 인류를 구하라! 당신의 심장을 뛰게 할 예고편 4월 28일 대개봉 15세이상관람가"
+          /></a>
+        </div>
+        <div
+          id="footerBanner"
+          class="banner_type02"
+          style="
+            background-color: rgb(255, 219, 0);
+            background-image: url('http://caching2.lottecinema.co.kr/lotte_image/2017/bg_01.jpg');
+            background-repeat: repeat-x;
+            background-position: 0px 0px;
+          "
+        >
+          <a
+            href="https://nvapi.feeldmc.com:443/ad/p/in/v1_0/clk?slotid=stw_lottelotte_36&amp;adgroupid=adg_lottecinema_20210326_107&amp;adid=adi_lottecinema_20210326_112"
+            target="_blank"
+            ><img
+              src="/Content/images/common/Inbyu2.png"
+              alt="더심슨무비xINBYU kakao company 가격 거품 뺀 운전자보험! 비교하러 가기"
+          /></a>
+        </div>
+      </div>
+      <div id="footer_section" class="footer">
+        <div class="inner">
+          <span class="f_logo"
+            ><img
+              src="/Content/images/common/logo_footer.gif"
+              alt="TheSimpsonMovie"
+          /></span>
+          <ul class="f_menu">
+            <li>
+              <a
+                href="https://www.lottecinema.co.kr/NLCHS/Etc/MemberClause"
+                title="회원약관"
+                target="_self"
+                >회원약관</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.lottecinema.co.kr/NLCHS/Etc/IndividualInfomationHandlingPolicy"
+                title="개인정보처리방침"
+                target="_self"
+                ><strong>개인정보처리방침</strong></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.lottecinema.co.kr/NLCHS/Etc/EmailCollectionRefusal"
+                title="이메일무단수집거부"
+                target="_self"
+                >이메일무단수집거부</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.lottecinema.co.kr/NLCHS/Etc/ElectronicManagementPolicy"
+                title="영상정보처리기기 운영 및 관리방침"
+                target="_self"
+                >영상정보처리기기 운영 및 관리방침</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.lottecinema.co.kr/NLCHS/Membership/l_point"
+                title="L.POINT회원안내"
+                target="_self"
+                >L.POINT회원안내</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.lottecinema.co.kr/NLCHS/Etc/AssignStandard"
+                title="배정기준"
+                target="_self"
+                >배정기준</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.lottecinema.co.kr/LCCS/Contents/employ/individuals.aspx"
+                title="채용안내"
+                target="_blank"
+                >채용안내</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.lottecinema.co.kr/LCCS/Contents/ad/advertinquiry.aspx"
+                title="광고/임대문의"
+                target="_blank"
+                >광고/임대문의</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.lottecinema.co.kr/LCCS/Contents/ethical/ethicsintroduce.aspx"
+                title="윤리경영"
+                target="_self"
+                >윤리경영</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://www.lottecinema.co.kr/LCCS/index.aspx"
+                title="기업정보"
+                target="_blank"
+                >기업정보</a
+              >
+            </li>
+          </ul>
+          <div class="bx_address">
+            <address>서울특별시 강남구 테헤란로 10길 9 그랑프리빌딩 5F</address>
+            <span class="bar">고객센터 0101-7777</span><br /><span
+              >대표이사 더심슨</span
+            ><span class="bar">사업자등록번호 777-77-77777</span
+            ><span class="bar">통신판매업신고번호 제7777호</span
+            ><span class="bar">개인정보 보호 최고 책임자 박정현</span>
+          </div>
+          <p class="copyright">
+            COPYRIGHT© THE SIMPSON MOVIE ALL RIGHT RESERVED.
+          </p>
+        </div>
+        <div class="article_award">
+          <div class="inner">
+            <ul>
+              <li>
+                <img
+                  src="/Content/images/common/footer_award_NCSI5.PNG?v=21020101"
+                  alt="NCSI / NCSI 영화관부문 5년 연속 1위"
+                />
+              </li>
+              <li>
+                <img
+                  src="/Content/images/common/footer_award_kcsi.png?v=21020102"
+                  alt="KCSI 영화관부문 7년 연속 1위(총12회)"
+                />
+              </li>
+              <li>
+                <img
+                  src="/Content/images/common/footer_award_kssqi-1.png?v=21020101"
+                  alt="KS-SQI 영화관부문 9년 연속 1위(총12회)"
+                />
+              </li>
+              <li>
+                <img
+                  src="/Content/images/common/footer_award_brandcinema.png?v=21020101"
+                  alt="올해의 브랜드대상 영화관 부문 10년 연속 1위"
+                />
+              </li>
+              <li>
+                <img
+                  src="/Content/images/common/footer_award_greenstar.png?v=21020101"
+                  alt="그린스타 영화관 부문 4년 연속 1위"
+                />
+              </li>
+              <li>
+                <img
+                  src="/Content/images/common/footer_award_brandstar.png?v=21020101"
+                  alt="대한민국 브랜드 스타 영화관 부문 1위"
+                />
+              </li>
+              <li>
+                <img
+                  src="/Content/images/common/footer_award_familyship.png?v=21020101"
+                  alt="가족친화 인증기업 선정"
+                />
+              </li>
+              <li>
+                <img
+                  src="/Content/images/common/footer_award_winner.png?v=21020101"
+                  alt="소셜미디어 브랜드분야 WINNER 수상"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <script src="/Scripts/Dist/Pagination.bundle.js?v=202104100123"></script>
+      <script src="/Scripts/Dist/LayoutTopOfTop.bundle.js"></script>
+      <script src="/Scripts/Dist/LayoutSkipNav.bundle.js?v=202104100123"></script>
+      <script src="/Scripts/Dist/LayoutHeaderMenu.bundle.js?v=202104100123"></script>
+      <script src="/Scripts/Dist/LayoutBanner.bundle.js?v=202104100123"></script>
+      <script src="/Scripts/Dist/LayoutFooter.bundle.js?v=202104100123"></script>
+
+      <script src="/Scripts/Dist/LayoutBannerReserve.bundle.js?v=202104100123"></script>
+
+      <script>
+        if (document.readyState == "complete") {
+          document.getElementById("loading").classList.remove("loader");
+          document
+            .getElementById("loading")
+            .classList.remove("loader-bouncing");
+          document.getElementById("loading").classList.remove("is-active");
+        }
+
+        //document.addEventListener('readystatechange', event => {
+        //    if (event.target.readyState === "complete") {
+        //        document.getElementById("loading").classList.remove('loader');
+        //        document.getElementById("loading").classList.remove('loader-bouncing');
+        //        document.getElementById("loading").classList.remove('is-active');
+        //    }
+        //});
+      </script>
+
+      <iframe
+        title="교차프레임"
+        src="https://www.lottecinema.co.kr/NLCHS/crossd_iframe.html"
+        style="position: absolute; width: 1px; height: 1px; left: -9999px"
+      ></iframe
+      ><iframe
+        title="교차프레임"
+        src="https://www.lottecinema.co.kr/NLCHS/crossd_iframe.html"
+        style="position: absolute; width: 1px; height: 1px; left: -9999px"
+      ></iframe
+      ><iframe
+        title="교차프레임"
+        src="https://event.lottecinema.co.kr/NLCHS/crossd_iframe.html"
+        style="position: absolute; width: 1px; height: 1px; left: -9999px"
+      ></iframe
+      ><iframe
+        title="교차프레임"
+        src="https://event.lottecinema.co.kr/NLCHS/crossd_iframe.html"
+        style="position: absolute; width: 1px; height: 1px; left: -9999px"
+      ></iframe>
+      <script type="text/javascript" id="">
+        (function () {
+          try {
+            var d = "UA-106764115-1",
+              h = "4",
+              a = null,
+              e = ga.getAll(),
+              f;
+            var b = 0;
+            for (f = e.length; b < f; b += 1)
+              if (e[b].get("trackingId") === d) {
+                a = e[b].get("clientId");
+                break;
+              }
+            a = encodeURI(a);
+            d =
+              "https://tag-deepad.lpoint.com/cookie?mid\x3d" +
+              h +
+              "\x26cid\x3d" +
+              a;
+            var g = document.getElementsByTagName("script")[0],
+              c = document.createElement("script");
+            c.async = !0;
+            c.type = "text/javascript";
+            c.src = d;
+            g.parentNode.insertBefore(c, g);
+          } catch (k) {
+            console.log("LPOINT DeepAD Cookie Sync Tag Error:::" + k);
+          }
+        })();
+      </script>
+    </footer>
+  </body>
+</html>
